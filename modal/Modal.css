@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background-image: url('./Modal.jpg');
+    background-size: cover;
+}
+
+header .banner{
+    padding: 20px;
+    background-color: #ece7e7c9;
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%,);
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #2196F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .banner h1{
+    color: #884242;
+    margin: 10px auto;
+}
+
+header .banner .btn{
+    font-size: 19px;
+    padding: 4px 7px;
+    color: #fff;
+    background-color: #2196F3;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+header .banner .btn:hover{
+    color: #2196F3;
+    background-color: #fff;
+}
+
+.modal-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #2195f381;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.open-modal{
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-overlay .modal-container{
+    padding: 20px;
+    background-color: #d5d5d5;
+    width: 50%;
+    height: 360px;
+    margin: auto;
+    position: relative;
+    top: 28%;
+    transform: translateY(-28%,);
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.modal-overlay .modal-container h3{
+    color: #884242;
+    background-color: #5ca3dd;
+    padding: 5px;
+    border-radius: 8px;
+    width: 150px;
+    margin: auto;
+    margin-top: -35px;
+    margin-bottom: 35px;
+    border: 1px solid #884242;
+}
+
+.modal-overlay .modal-container button{
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 19px;
+    padding: 4px 7px;
+    color: #884242;
+    background-color: #5ca3dd;
+    border: 2px solid #884242;
+    outline: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal-overlay .modal-container button:hover{
+    color:  #5ca3dd;
+    background-color: #884242;
+    border: 2px solid #5ca3dd;
+}
+
+.modal-overlay .modal-container .content{
+    margin: 5px auto;
+    width: 85%;
+    height: 250px;
+    border: 2px solid #884242;
+    border-radius: 8px;
+}
