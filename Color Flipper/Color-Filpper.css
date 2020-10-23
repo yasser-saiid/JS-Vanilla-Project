@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1284db;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+/* ----------start navbar style-----------------*/
+.nav-center{
+    overflow: hidden;
+    padding: 15px;
+    box-shadow: 0 0 20px 5px rgb(228, 224, 224);
+    border-radius: 0px 0px 12px 12px;
+}
+
+.nav-center h4{
+    width: 49%;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    float: left;
+    text-align: center;
+}
+
+.nav-center .nav-links{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 49%;
+    justify-content: center;
+    float: right;
+}
+
+.nav-center .nav-links li{
+    padding: 0 10px;
+}
+
+.nav-center li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:  #fff;
+    font-size: 18px;
+}
+/* ----------end navbar style-----------------*/
+
+/* ----------start main section style-----------------*/
+.main{
+    position: relative;
+    padding: 50px;
+    text-align: center;
+}
+
+.main .center{
+    position: relative;
+    margin-top: 20%;
+}
+
+@media(min-width:500px){
+    .main h2{
+        background-color: #222;
+        color: #fff;
+        padding: 10px 0;
+        border-radius: 12px;
+        margin: 20px auto;
+        border: 2px solid #fff;
+        width: 100%;
+    }
+}
+
+@media(min-width:992px){
+    .main h2{
+        background-color: #222;
+        color: #fff;
+        padding: 10px 0;
+        border-radius: 12px;
+        margin: 20px auto;
+        border: 2px solid #fff;
+        width: 45%;
+    }
+}
+
+.main h2 span{
+    color: #4a5cc0;
+}
+
+.main button{
+    width: 120px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.main button:hover{
+    background-color: #222;
+}
+
+/* ----------end main section style-----------------*/

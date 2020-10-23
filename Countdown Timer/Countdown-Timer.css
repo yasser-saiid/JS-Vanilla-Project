@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c3bfbf;
+}
+
+.gift-container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* gift img container */
+.gift-img{
+    width: 40%;
+    margin-top: 100px;
+    padding: 10px;
+    border: 1px solid #b11248;
+}
+
+.gift-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+
+/* gift info contsiner*/
+
+.gift-info{
+    margin-top:100px;
+    width: 40%;
+    padding: 10px;
+}
+
+.gift-info h2{
+    color: #157cce;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+}
+
+.gift-info > h4{
+    color: #b11248;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+
+.gift-info p{
+    line-height: 1.4;
+    text-transform: capitalize;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.gift-info .dead-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gift-info .dead-line div{
+    
+    background-color: #0b3e67;
+    padding: 16px;
+    text-align: center;
+    color: #e4e0e0;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.gift-info .dead-line div h4{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.gift-info .dead-line div span{
+    letter-spacing: 2px;
+}
+
+h4{
+    color: #b11248;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+
+/* media */
+
+@media(max-width:760px){
+    .gift-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .gift-img{
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #b11248;
+    }
+
+    .gift-info{
+        margin: 20px auto;
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
