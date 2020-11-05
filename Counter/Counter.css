@@ -1,0 +1,68 @@
+body{
+    background-color: #629ab8;
+}
+
+main h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 50px auto;
+}
+
+.btn{
+    padding: 5px 18px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #222;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 7px;
+}
+
+.btn:hover{
+    background-color: #222;
+    color: #629ab8;
+}
+
+main span{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+    width: 80PX;
+    height: 80PX;
+    padding: 30PX;
+    margin: 10px auto;
+    margin-bottom: 30PX;
+    border: 2PX solid #222;
+    border-radius: 50%;
+    cursor: help;
+}
+
+main .btn-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+main .btn-auto-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+}
+
+main hr{
+    width: 30%;
+    background-color: #222;
+    color: #222;
+    height: 2px;
+    border: none;
+}
