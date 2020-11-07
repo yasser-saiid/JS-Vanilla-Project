@@ -1,0 +1,40 @@
+*{
+    transition: all .4s ease-in-out;
+}
+
+section{
+    background: rgb(104,98,230);
+    background: linear-gradient(158deg, rgba(104,98,230,1) 0%, rgba(223,92,52,1) 100%);
+    min-height: 100vmin;
+}
+
+.bg-img{
+    background-image: url("../Image\'s/bg-pattern-desktop.svg");
+    background-size: cover;
+}
+.bg-img .img-2{
+    position: absolute;
+    left: -5%;
+    top: 35%;
+}
+
+
+
+.question{
+    border-bottom: 1px solid #222;
+}
+.question h6:hover,.hover{
+    color: #eb9c25;
+    cursor: pointer;
+}
+.question .rotate{
+    transform: rotate(180deg);
+}
+
+
+/* for show and hidden answer question */
+.hidden{
+    display: none;
+}
+
+
