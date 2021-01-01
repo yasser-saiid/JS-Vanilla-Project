@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+}
+
+.main-container {
+    background-image: url("../img/bg-intro-desktop.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-container .overlay{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #e4181887;
+}
+
+.component-content {
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -50%) !important;
+}
+
+.component-form #main-form div:last-child{
+    font-size: 12px;
+}
+
+.component-form #main-form .Warning-text{
+    display: none;
+    color: #da6666;
+    font-size: 14px;
+}
+
+.component-form #main-form .show-Warning-text{
+    display: block;
+}
+

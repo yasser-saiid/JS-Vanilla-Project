@@ -1,0 +1,108 @@
+.main-continer{
+    height: 100vh;
+    background-color: #cbced0 !important;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.main-continer .content-container{
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 1px #798994;
+}
+
+.content-container .img img{
+    box-shadow: 7px 7px 15px 0px #798994;
+}
+
+.main-continer .share-icon:hover{
+    box-shadow: 6px 6px 15px 3px #798994;
+    background-color: white !important;
+    color: #343a40 !important;
+    cursor: pointer;
+}
+
+.main-continer .avatar-img .social{
+    position: absolute;
+    right: -40px;
+    bottom: 68px;
+    display: none;
+}
+
+.main-continer .avatar-img .social i:hover{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.social::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #6c757d transparent transparent transparent;
+}
+
+.main-continer .avatar-img .show{
+    display: block;
+}
+
+/*media querry */
+@media (min-width: 1200px){
+    .main-continer .description h4{
+        margin: 20px 10px;
+        font-size: 30px;
+    }
+    .main-continer .description p{
+        margin: 10px;
+        font-size: 22px;
+        color: #414040 !important;
+    }
+    .main-continer .avatar-img{
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .content-container .img img{
+        box-shadow: none;
+    }
+
+    .main-continer .description h4{
+        font-size: 18px;
+    }
+    .main-continer .description p{
+        font-size: 16px;
+        color: #414040 !important;
+    }
+    .main-continer .avatar-img .social{
+        position: absolute;
+        right: 20px;
+        bottom: 68px;
+        font-size: 26px;
+    }
+    
+    .main-continer .avatar-img .social i:hover{
+        cursor: pointer;
+        font-size: 28px;
+    }
+    
+    .social::after{
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 90%;
+        margin-left: -5px;
+        border-width: 7px;
+        border-style: solid;
+        border-color: #6c757d transparent transparent transparent;
+    }
+}
+

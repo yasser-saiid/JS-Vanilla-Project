@@ -1,0 +1,19 @@
+body, html {
+    height: 100%;
+}
+/* container background */
+.testi-container {
+    background: rgb(182,181,212);
+    background: linear-gradient(331deg, rgba(182,181,212,1) 1%, rgba(237,222,222,1) 26%, rgba(192,206,209,1) 100%);
+    min-height: 100vh;
+}
+
+.bg-card{
+    background-color: #ece4e4;
+    border: 2px solid #fff;
+    border-radius: 75px 17px;
+}
+
+/* style for icon next & prevuse */
+.icon-container  i{color: #a1a1a1;}
+.icon-container  i:hover{color: #000000;}

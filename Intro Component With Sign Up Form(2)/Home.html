@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Home</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <!-- Your custom styles (optional) -->
+        <link  rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!-- Start your project here-->
+        <section class="main-container">
+          <div class="container-fluid px-lg-5 px-md-3 py-2 center-container">
+            <div class="main-content p-2">
+            <!-- start row -->
+              <div class="row p-2 m-0 justify-content-around">
+                <!-- frist colmun has containes title and description -->
+                <div class="col-md-5 p-2 mb-sm-3 mb-md-0">
+                  <div class="description">
+                    <lottie-player 
+                      src="https://assets8.lottiefiles.com/packages/lf20_Hg1eiy.json" 
+                      loop  autoplay 
+                      class="d-sm-none d-md-block" 
+                      style="width: 80%;"></lottie-player>
+                    <h2 class="h2-responsive">Repository</h2>
+                    <p class="lead text-capitalize">You can save all data without fear of loss or damage in complete security..!</p>
+                    <hr class="z-depth-1 ">
+                  </div>
+                </div>
+                <!-- /-! end frist column -->
+
+                <!-- second colmun has containes form -->
+                <div class="col-md-5 p-2 main-form">
+                  <div class="main-form-title p-2 text-center z-depth-5">
+                    <p class="text-capitalize m-0"><span class="spinner-grow spinner-grow-sm mr-2" role="status"></span>please fill in this form to create an account !</p>
+                  </div> 
+                  <!-- sign up form -->
+                  <form class="mt-2 p-3" id="form">
+                    <div class="form-title p-2"><h4 class="h4-responsive text-left text-capitalize text-capitalize">sign up</h4></div>
+                    <hr class="mt-0 mb-3">
+                    <div class="name-container form-row mb-4">
+                      <div class="col">
+                          <!-- First name -->
+                          <input type="text" id="FormFirstName" class="form-control" placeholder="First name" autocomplete="off">
+                      </div>
+                      <div class="col">
+                          <!-- Last name -->
+                          <input type="text" id="FormLastName" class="form-control" placeholder="Last name" autocomplete="off">
+                      </div>
+                      <!-- name message validation -->
+                      <p class="validate-text text-danger col-12 text-capitalize" id="name-message"></p>
+                    </div>
+                    <div class="enail-container mb-4">
+                      <!-- E-mail -->
+                      <input type="email" id="FormEmail" class="form-control" placeholder="E-mail" autocomplete="off">
+                      <!-- email message validation -->
+                      <p class="validate-text text-danger text-capitalize" id="email-message"></p>
+                    </div>
+                    <div class="password-container mb-4">
+                      <!-- password -->
+                      <input type="password" id="FormPassword" class="form-control" placeholder="Password">
+                      <!-- password message validation -->
+                      <p class="validate-text text-danger text-capitalize" id="password-message"></p>
+                    </div>
+                    <div class="confirm-password-container mb-4">
+                      <!-- confirm password -->
+                      <input type="password" id="FormConfirmPassword" class="form-control" placeholder="confirm Password">
+                      <!-- confirm password message validation -->
+                      <p class="validate-text text-danger text-capitalize"  id="confirm-password-message"></p>
+                    </div>
+                    <!-- Sign up button -->
+                    <button class="text-capitalize btn-block" type="submit">create my account</button>
+                    <hr>
+                    <div class="form-footer">
+                      <p class="mb-1 lead">By clicking create my account you agree to our..!</p>
+                      <a href="terms.html"  class="text-capitalize" target="_blank">terms of service..<i class="fa fa-exclamation ml-2"></i></a>
+                    </div>
+                  </form>
+                  <!-- /- end form sign up -->
+                </div>
+              <!-- /-! end second column -->
+              </div>
+            <!-- /- !end  row -->
+            </div>
+          </div>
+        </section>   
+        <!-- /Start your project here-->
+        <!-- SCRIPTS -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- main core JavaScript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

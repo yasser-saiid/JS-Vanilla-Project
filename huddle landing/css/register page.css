@@ -1,0 +1,58 @@
+.register-component {
+  font-family: sans-serif;
+  background-color: #674bb1;
+  background-image: url("../img/bg-desktop.svg");
+  min-height: 100vh;
+}
+.register-component hr {
+  width: 15%;
+  height: 2px;
+  margin: auto;
+  background-color: #f5f4f4;
+}
+.register-component .form-register .form {
+  border: 1px solid #f5f4f4;
+  border-radius: 10px;
+}
+.register-component .form-register .form .form-label {
+  font-family: sans-serif;
+  color: #f5f4f4;
+}
+.register-component .form-register .form .form-control:focus {
+  color: #dd53d7;
+  border-color: #f5f4f4;
+  outline: 0;
+  box-shadow: 5px 5px 6px 4px #f253ca7a;
+}
+.register-component .form-register .form button {
+  transition: all 0.8s ease-in-out;
+  padding: 7px 40px;
+  color: #674bb1;
+  margin: 10px auto;
+}
+.register-component .form-register .form button:hover {
+  box-shadow: 5px 5px 6px 4px #f253ca7a;
+}
+.register-component .form-register .form .social-register {
+  display: flex;
+  justify-content: center;
+}
+.register-component .form-register .form .social-register div {
+  transition: all 0.8s ease-in-out;
+  color: #f5f4f4;
+  cursor: pointer;
+  padding: 6px;
+  border: 1px solid #f5f4f4;
+  border-radius: 50px;
+  margin: 10px;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+}
+.register-component .form-register .form .social-register div:hover {
+  color: #fe50bf;
+  border-color: #fe50bf;
+  box-shadow: 5px 5px 6px 4px #f253ca7a;
+}
+
+/*# sourceMappingURL=register%20page.css.map */

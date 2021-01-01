@@ -1,0 +1,125 @@
+.silder-container{
+    max-height: 100vh;
+    background-color: #dfdfdf;
+}
+
+
+/* .slider-content .content{
+    max-height: 100vh;
+} */
+
+.slider-content .content .quote{
+    height: 50vh;
+    background-image: url("../img/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 20% 70%;
+}
+
+.slider-content .content .quote p{
+    z-index: 500;
+    position: absolute;
+    top: 20%;
+    right: -35%;
+    left: 12%;
+    font-weight: normal;
+    color: #444;
+}
+
+
+.slider-content .content .curve{
+    height: 50vh;
+    background-image: url("../img/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+
+.slider-content .curve  h1{
+    z-index: 500;
+    position: absolute;
+    bottom: 40%;
+    right: -35%;
+    left: 12%;
+    color: #333;
+}
+.slider-content .curve  span{
+    z-index: 500;
+    position: absolute;
+    bottom: 37%;
+    right: -35%;
+    left: 39%;
+    color: #444;
+}
+
+.slider-content .img{
+    height: 100vh;
+    background-image: url('../img/pattern-bg.svg');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: 49% 50%;
+}
+
+.slider-content .img img{
+    border-radius: 15px;
+}
+
+.slider-content .icon{
+    border-radius: 12px;
+    position: absolute;
+    left: 20%;
+    bottom: 12%;
+    padding: 2px 5px;
+}
+
+.slider-content .icon i{ 
+    cursor: pointer;
+    color: #444;
+}
+
+@media(max-width:767px){
+    .silder-containe{padding: 40px;}
+
+    .slider-content{display: flex; flex-direction: column;}
+    
+    .slider-content .content{height: 50vh; order: 2;}
+
+    .slider-content .content .quote{height: 25vh;}
+    .slider-content .content .quote p{
+        z-index: 500;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        left: 5%;
+    }
+
+    .slider-content .content .curve{height: 25vh; text-align: center;}
+    .slider-content .curve  h1{
+        z-index: 500;
+        position: absolute;
+        right: 0%;
+        left: 5%;
+    }
+    .slider-content .curve  span{
+        z-index: 500;
+        position: absolute;
+        bottom: 34%;
+        right: 0%;
+        left: 5%;
+    }
+    
+    .slider-content .img{
+        height: 50vh;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: 50%;
+    }
+
+    .slider-content .img img{
+        border-radius: 15px;
+        width:50%;
+    }
+
+    .slider-content .icon{
+        left: 20%;
+        bottom: 25%;
+    }
+}

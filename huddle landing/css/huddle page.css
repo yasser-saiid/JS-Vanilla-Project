@@ -1,0 +1,63 @@
+.huddle-component {
+  min-height: 100vh;
+  background-image: url("../img/bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #674bb1;
+  font-family: sans-serif;
+  position: relative;
+}
+.huddle-component .description {
+  color: #f5f4f4;
+}
+.huddle-component .description h2 {
+  margin: 20px 5px;
+}
+.huddle-component .description p {
+  margin: 0 5px;
+}
+.huddle-component .description button {
+  transition: all 0.8s ease-in-out;
+  padding: 7px 40px;
+  color: #674bb1;
+  margin: 20px 5px;
+}
+.huddle-component .description button:hover {
+  color: #f5f4f4;
+  background-color: #fe50bf;
+}
+.huddle-component .footer {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 97vw;
+}
+.huddle-component .footer div {
+  transition: all 0.8s ease-in-out;
+  color: #f5f4f4;
+  cursor: pointer;
+  padding: 6px;
+  border: 1px solid #f5f4f4;
+  border-radius: 50px;
+  margin: 16px 8px;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+}
+.huddle-component .footer div:hover {
+  color: #fe50bf;
+  border-color: #fe50bf;
+}
+
+@media (max-width: 767px) {
+  .huddle-component .footer {
+    display: flex;
+    justify-content: center;
+    position: static;
+    bottom: 0;
+    width: 97vw;
+  }
+}
+
+/*# sourceMappingURL=huddle%20page.css.map */

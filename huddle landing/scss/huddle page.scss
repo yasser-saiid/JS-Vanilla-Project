@@ -1,0 +1,70 @@
+$mainColor : #674bb1;
+$textCoor :#f5f4f4;
+
+.huddle-component{
+    min-height: 100vh;
+    background-image: url("../img/bg-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $mainColor;
+    font-family: sans-serif;
+    position: relative;
+
+    .description{
+        color: $textCoor;
+        h2{
+            margin: 20px 5px;
+        }
+        p{
+            margin: 0 5px;
+        }
+        button{
+            transition: all .8s ease-in-out;
+            padding: 7px 40px;
+            color: $mainColor;
+            margin: 20px 5px;
+            &:hover{
+                color: $textCoor;
+                background-color: #fe50bf;
+                ;
+            }
+        }
+    }
+
+    .footer{
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+        width: 97vw;
+        div{
+            transition: all .8s ease-in-out;
+            color: $textCoor;
+            cursor: pointer;
+            padding: 6px;
+            border: 1px solid $textCoor;
+            border-radius: 50px;
+            margin: 16px 8px;
+            width: 37px;
+            height: 37px;
+            text-align: center;
+            &:hover{
+                color: #fe50bf;
+                border-color: #fe50bf;
+            }
+        }
+        
+    }
+}
+
+@media(max-width:767px){
+    .huddle-component{
+        .footer{
+            display: flex;
+            justify-content: center;
+            position: static;
+            bottom: 0;
+            width: 97vw;
+        }
+    }
+}

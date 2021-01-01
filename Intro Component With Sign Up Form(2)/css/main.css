@@ -1,0 +1,102 @@
+body, html {
+    height: 100%;
+}
+
+.main-container {
+    height: 100vh;
+    background-color: #1b1c1d;
+}
+
+.main-container .center-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*style for frist col has contains description div containes animation and title pragraph*/
+.description{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.description h2{
+    color: #2180c5;
+    text-shadow: 1px 5px 14px #2180c5;
+}
+.description p{
+    color: #4a606b;
+}
+.description hr{
+    background-color: #4a606b;
+}
+/* end description div style */
+
+/* style for second col has contains form */
+
+.main-form .main-form-title{
+    background-color: #2180c5;
+    border-radius: 5px 12px;
+    color: #afc4ca;
+}
+
+.main-form form{
+    border: 1px solid #4a606b;
+    border-radius: 12px 5px;
+    box-shadow: 5px 6px 14px -5px #4a606b;
+}
+.main-form form input{
+    background-color: #1b1c1d;
+    border: 1px solid #4a606b;
+}
+.main-form form input:focus{
+    background-color: #e3e4e6;
+}
+
+.main-form form button{
+    background-color: #2180c5;
+    border-radius: 12px 12px;
+    color: #afc4ca;
+    outline: none;
+    border: none;
+    padding: 5px
+}
+.main-form form button:hover{
+    background-color: #1b74b4;
+    border-radius: 12px 12px;
+    color: #afc4ca;
+    box-shadow: 0px 8px 7px -4px #4a606b;
+}
+
+.main-form form .form-title{
+    color: #4a606b;
+}
+.main-form form hr{
+    background-color: #4a606b;
+}
+
+.main-form .form-footer p{
+    color: #4a606b;
+}
+.main-form .form-footer a{
+    color: #2180c5;
+}
+
+.validate-text{
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+.main-form form i{
+    font-size: 10px;
+}
+/* end form div style */
+
+
+/* style for small media les than 600px*/
+@media(max-width:576px){
+    .description lottie-player {
+        display: none;
+    }
+}
