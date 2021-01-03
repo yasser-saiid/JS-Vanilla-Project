@@ -1,0 +1,172 @@
+$lightModeBackground:#ffff;
+$darkModeBackground:#20222f;
+$lightTextColor: #2e2d2d;
+$darkTextColor: #ffffff;
+$cardLightBackgroundColor:#eceaea;
+$carddarkBackgroundColor:#313647;
+
+
+
+/* public responsive class */
+.daashboard-container{
+    transition: all .5s ease-in-out;
+    background-color: $lightModeBackground;
+    color: $lightTextColor;
+    /* header title and switch button */
+    header{
+        .logo{
+            h3{
+                color: $lightTextColor;
+            }
+        }
+        .mode{
+            .switch-btn{
+                outline: none;
+                position: relative;
+                border: 1px solid $lightTextColor;
+                .fa-sun-o{
+                    color: #ffbb00;
+                }
+                .fa-moon-o{
+                    color: #1026b6;
+                }
+                .switch{
+                    position: absolute;
+                    top: 2px;
+                    left: 46%;
+                    width: 50%;
+                    height: 84%;
+                    margin: 0;
+                    display: block;
+                    transition: all 0.3s ease-in-out;
+                    background-color: #7f7f7f;
+                    border: 1px solid #7f7f7f;
+                    border-radius: 12px;
+                }
+                .slider{
+                    left: 3px;
+                } 
+            } 
+        }
+    }
+    @media (max-width:767px) {
+        .logo{
+            border-bottom: 1px solid $lightTextColor;
+            span{
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+        }
+        .mode{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    }
+}
+
+/* containers all cards card-top and card-bottom */
+
+.cards-container{
+    /* cards top */
+    .top-card{
+        .card:nth-of-type(1){border-top: 3px solid #1c8df5;}
+        .card:nth-of-type(2){border-top: 3px solid #1fa1ef;}
+        .card:nth-of-type(3){border-top: 3px solid #e46789;}
+        .card:nth-of-type(4){border-top: 3px solid #c2032c;}
+        .card{
+            cursor: pointer;
+            transition: all .6s ease-in-out;
+            width: 23%;
+            text-align: center;
+            background-color: $cardLightBackgroundColor;
+            &:hover{
+                background-color: #9e9c9c;
+                transform: translate(0%,-10%);
+            }
+        }
+        @media (max-width:768px) {
+            .card{
+                width: 48%;
+                margin-bottom: 8px;
+                &:hover{transform: none;}
+            }
+            @media (max-width:450px) {
+                .card{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    /* cards bottom  */
+    .bottom-card{
+        div{
+            .card{
+                transition: all .6s ease-in-out;
+                background-color: $cardLightBackgroundColor;
+                cursor: pointer;
+                width: 23%;
+                text-align: center;
+                &:hover{background-color: #9e9c9c;}
+            }
+            @media (max-width:768px) {
+                .card{
+                    width: 48%;
+                    margin-bottom: 8px;
+                }
+                @media (max-width:450px) {
+                    .card{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* dark mode them */
+[data-theme='dark'] {
+    background-color: $darkModeBackground ;
+    color: $darkTextColor ;
+    /* hrader dark theme */
+    header{
+    .logo{
+        border-color:$darkTextColor ;
+        h3{color: $darkTextColor ;}
+        span{color: $darkTextColor !important;}
+        }
+        .mode{
+            span{color: $darkTextColor !important;}
+        }
+    }
+    /* card container dark theme */
+    .cards-container{
+        .card{
+            background-color: $carddarkBackgroundColor !important;
+            &:hover{background-color: #242835 !important;}
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

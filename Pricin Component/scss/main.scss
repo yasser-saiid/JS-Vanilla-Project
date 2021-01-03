@@ -1,0 +1,102 @@
+$mainColor: #007bff;
+$secondColor: #c1bbbb;
+$fristFontColor: #fcfcfc;
+$secondFontColor: #736c6c;
+
+body{
+    background-color: $secondColor;
+}
+.pricing-component{
+    height: 100vh;
+    background-image: url('../img/bg-top.svg') , url('../img/bg-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: top right, left bottom;
+    .heading{
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        color: $secondFontColor;
+    }
+    .switch{
+        padding: 10px 0;
+
+        .switch-btn{
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 27px;
+
+                .switch input {display:none;}
+
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: $mainColor;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                    border-radius: 34px;
+                }
+
+                .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 20px;
+                    width: 20px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                    border-radius: 50%;
+                }
+
+                input:checked + .slider {
+                    background-color: #569eeb;
+                }
+                
+                input:focus + .slider {
+                    box-shadow: 0 0 1px $mainColor;
+                }
+                
+                input:checked + .slider:before {
+                    -webkit-transform: translateX(18px);
+                    -ms-transform: translateX(18px);
+                    transform: translateX(32px);
+                }
+            }
+        }
+        .pricing-card {
+            .card{
+                transition: all .6s ease-in-out;
+                background-color: $fristFontColor;
+                color: $secondFontColor;
+                border-radius: 12px;
+                .pricing{
+                    font-size: 60px;
+                }
+                ul li{
+                    border-bottom: 1px solid $secondColor;
+                    padding: 10px 0;
+                }
+                a{
+                    background-color: $mainColor;
+                    color: $fristFontColor;
+                }
+                &:hover{
+                    background-color: $mainColor;
+                    color: $fristFontColor;
+                    box-shadow: -8px 10px 12px 1px $secondFontColor;
+                    transform: scale(1.05);
+                    z-index: 10;
+                    a{
+                        background-color: $fristFontColor;
+                        color: $mainColor;
+                    }
+            }
+        } 
+    }
+
+}

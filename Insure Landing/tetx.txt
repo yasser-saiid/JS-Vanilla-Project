@@ -1,0 +1,13 @@
+<div class="row m-0">
+                    <div class="col-md-5 intro-left">
+                            <hr/>
+                            <h1 class="">Humanizing<br/> your insurance.</h1>
+                            <p class="lead">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+                            <button type="button" class="btn btn-outline-dark">VIEW PLAN</button>
+                    </div>
+                    <div class="col-md-5 intro-right">
+                        <div class="img">
+                            <img src="img/image-intro-desktop.jpg" alt="intro">
+                        </div>
+                    </div>
+                </div>

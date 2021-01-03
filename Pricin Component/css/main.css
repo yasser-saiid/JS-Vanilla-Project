@@ -1,0 +1,92 @@
+body {
+  background-color: #c1bbbb;
+}
+
+.pricing-component {
+  height: 100vh;
+  background-image: url("../img/bg-top.svg"), url("../img/bg-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top right, left bottom;
+}
+.pricing-component .heading {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  color: #736c6c;
+}
+.pricing-component .switch {
+  padding: 10px 0;
+}
+.pricing-component .switch .switch-btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 27px;
+}
+.pricing-component .switch .switch-btn .switch input {
+  display: none;
+}
+.pricing-component .switch .switch-btn .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #007bff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+.pricing-component .switch .switch-btn .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.pricing-component .switch .switch-btn input:checked + .slider {
+  background-color: #569eeb;
+}
+.pricing-component .switch .switch-btn input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+.pricing-component .switch .switch-btn input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(32px);
+}
+.pricing-component .pricing-card .card {
+  transition: all 0.6s ease-in-out;
+  background-color: #fcfcfc;
+  color: #736c6c;
+  border-radius: 12px;
+}
+.pricing-component .pricing-card .card .pricing {
+  font-size: 60px;
+}
+.pricing-component .pricing-card .card ul li {
+  border-bottom: 1px solid #c1bbbb;
+  padding: 10px 0;
+}
+.pricing-component .pricing-card .card a {
+  background-color: #007bff;
+  color: #fcfcfc;
+}
+.pricing-component .pricing-card .card:hover {
+  background-color: #007bff;
+  color: #fcfcfc;
+  box-shadow: -8px 10px 12px 1px #736c6c;
+  transform: scale(1.05);
+  z-index: 10;
+}
+.pricing-component .pricing-card .card:hover a {
+  background-color: #fcfcfc;
+  color: #007bff;
+}
+
+/*# sourceMappingURL=main.css.map */
