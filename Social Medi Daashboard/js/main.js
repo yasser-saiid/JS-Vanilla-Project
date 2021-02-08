@@ -14,5 +14,3 @@ switchBtn.addEventListener('click', function(){
     }
 })
 
-
-console.log(dasshboardContainer);

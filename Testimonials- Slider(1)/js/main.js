@@ -82,7 +82,6 @@ nextBtn.addEventListener('click', ()=>{
 // show random person
 randomBtn.addEventListener('click', ()=>{
     currentItem = Math.floor(Math.random() * TistimonialsContent.length)
-    console.log(currentItem);
     showPerson(currentItem)
 })
 
