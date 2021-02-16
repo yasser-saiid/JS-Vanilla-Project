@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* start intro component style */
+.intro-component{
+    background: url('../img/file-background.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/* start intro description  component */
+.intro-component .dscription-container{
+    width: 50%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #000000c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dscription-container img{
+    width: 50%;
+}
+.dscription-container h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px;
+}
+.dscription-container h2 span{
+    color:  #ef2ac0;
+}
+.dscription-container p{
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+/* start accordion  component */
+.intro-component .accordion-container{
+    width: 50%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #000000c4;
+    transition: all 0.5s ease-in-out;
+}
+.accordion-container .accordion-item{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.accordion-container .accordion-item:nth-child(1){
+    margin-top: 35%;
+}
+.accordion-container .accordion-item  .accordion-titel{
+    background-color:#1a1a1a;
+    color: #efeced;
+    padding: 11px;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    border-bottom: 3px solid;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+.accordion-container .accordion-item .accordion-text{
+	background-color: #370a2c;
+	text-transform:capitalize;
+    padding: 10px;
+    display: table-column;
+    border-top: 3px solid #fff;
+    transition: all 1s ease;
+}
+.accordion-container .accordion-item .accordion-text.show{
+    display: table-cell;
+    transform: translateX(30px);
+    border-radius: 8px;
+}
+.accordion-container .accordion-item .accordion-text p{
+	line-height: 1.5;
+    color: #efeced;
+}
+.accordion-container .accordion-item .accordion-text p span{
+	font-weight: bold;
+}
+
+
+
+
