@@ -1,154 +1,385 @@
-/* start slider section */
-.overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.767);
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-}
-/* slider img */
-.slider .slider-img .main-navbar{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    display: flex;
-    padding: 5px;
-    width: 70%;
-    
-}
-.main-navbar .nav-header{
-    width: 30%;
-}
-.main-navbar .nav-header .toggle-links{
-    display: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-size: 62.5%;
 }
 
-.main-navbar .navbar-links{
-    width: 70%;
-}
-.main-navbar .navbar-links .links-item .btn-close{
-    display: none;
+
+body{
+    overflow-x: hidden;
 }
 
-.main-navbar .navbar-links .links-item .link-item{
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 10px 0;
-    transition: all 0.4s ease-in-out;
+.section1{
+    position: relative;
 }
 
-.slider .slider-img .slider-btn{
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+/* carousel */
+
+.caroseul-button{
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 100%;
+    width: 100%;
+    z-index: 8;
 }
 
-/* slider content */
-.slider .slider-content .title{
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: bold;
+
+.caroseul-button__left{
+    float: left;
+    background-color: hsl(0, 0%, 0%);
+    width: 10%;
+    padding: 2rem 3rem;
+    cursor: pointer;
 }
-.slider .slider-content .desc{
-    line-height: 1.6;
-    color: #666;
-    margin: 10px;
+
+.caroseul-button__right{
+    margin-right: 2rem;
+    float: left;
+    background-color: hsl(0, 0%, 0%);
+    width: 10%;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    
 }
-.slider .slider-content .link-shop{
+
+.caroseul-button__left:hover, .caroseul-button__right:hover{
+    background-color:hsl(0, 0%, 63%);
+}
+
+/* navbar */
+
+.navbar-list{
+    list-style: none;
+    display:flex;
+}
+
+.navigation{
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    width: 100%;
+}
+
+.navbar-brand{
+    float: left;
+    margin: 0 40px 0 3%;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.navbar-item{
+    margin: 10px 15px;
+}
+
+.navbar-link{
+    color: white;
+    font-size: 1.2rem;
+}
+
+#mobile-nav-icon{
+    display: none;
+    position: absolute;
+    margin-top: 6%;
+    cursor: pointer;
+}
+
+.navbar-link:hover{
+    color: white;
     text-decoration: none;
-    color: #545252;
-    letter-spacing: 5px;
-    transition: all 0.5s ease-in-out;
-    display: inline-block;
-    margin: 10px;
-}
-.slider .slider-content .link-shop:hover{
-    padding-left: 20px;
 }
 
-/* Media queries */
-@media (max-width: 767.98px) {
+.navbar-link:hover:after{
+    color: white;
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 5px; /* This creates some space between the element and the border. */
+    border-bottom: 2px solid white; /* This creates the border. Replace black with whatever color you want. */
+}
 
-    /* navbar links */
-    /* slider img */
-    .slider .slider-img .main-navbar{
-        width: 85%;
-        flex-direction: column;
-        z-index: 999;
-    }
-    .main-navbar .nav-header{
+/* header left */
+
+
+.headerleft{
+    margin-top: 20%;
+    padding: 0 18% 0 18%;
+}
+
+.headerleft__main{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.headerleft__sub{
+    font-size: 1rem;
+    margin-top: 8%;
+    line-height: 1.8rem;
+    color: hsl(0, 0%, 63%);
+    margin-bottom: 8%;
+}
+
+.headerleft__button{
+    color: hsl(0, 0%, 27%);
+    font-size: 1rem;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 1px hsl(0, 0%, 27%);
+}
+
+.headerleft__button:hover{
+    color: hsl(0, 0%, 63%);
+    text-decoration: none;
+}
+
+/* about section */
+.about-section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.about-section__description{
+    padding: 5% 3%;
+}
+
+.about-section__description__header{
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0px 0px 1px hsl(0, 0%, 27%);
+}
+
+.about-section__description__sub{
+    font-size: 400%;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.6rem;
+}
+
+.about-section__img{
+    width: 380px;
+    height: 100%;
+}
+
+/* */
+
+@media (min-width:992px) and (max-width:1180px){
+    .container-fuild{
         width: 100%;
-        margin-bottom: 20px;
-    }
-    .main-navbar .nav-header .toggle-links{
-        display: block;
-        cursor: pointer;
-        
     }
 
-    .main-navbar .navbar-links{
-        width: 70%;
+    .headerleft{
+        margin-top: 12%;
+        padding: 0 12% 0 12%;
+    }
+
+    .about-section__description__header{
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width:991px){
+    .selected{
+        box-shadow: 0 0 0 99999px rgba(0, 0, 0, .5);
+    }
+
+    .caroseul-button{
+       left: 75%;
+    }
+
+    .caroseul-button__left{
+        width: 12%;
+        padding: 2rem ;
+    }
+
+    .caroseul-button__right{
+        width: 12%;
+        padding: 2rem ;
+    }
+
+    /* section left */
+
+    .headerleft{
+        margin-bottom: 20%;
+    }
+
+    /* about section */
+    .about-section{
+        display: block;
+    }
+
+    .about-section__description{
+        padding:15% 12% 12%;
+    }
+
+    .about-section__img{
+        width: 100%;
+    }
+
+    /* navbar */
+    #mobile-nav-icon{
+        display: block;
+        margin-top: 2%;
+    }
+    .navbar-list{
+        display: none;
+        position: absolute;
+        font-weight: 600;
+        top: -45px;
+        left: -7.9%;
+        height: 100px;
+    }
+    
+    .background{
         background-color: white;
-        padding: 25px;
-        border-radius: 8px;
+        width: 100%;
     }
 
-    .main-navbar .navbar-links{
-        transform: translateX(-700px);
-        transition: all 0.4s ease-in-out;
-    }
-    .main-navbar .navbar-links.active{
-        transform: translateX(10px);
-    }
-
-    .main-navbar .navbar-links .links-item{
+    .showing{
         display: flex;
-        flex-direction: column;
     }
 
-    .main-navbar .navbar-links .links-item .btn-close{
-        display: block;
-        cursor: pointer;
+    .navbar-brand{
+        margin-left: 380px;
     }
 
-    .main-navbar .navbar-links .links-item .link-item{
+    .navbar-link{
+        color: black;  
+    }
+
+    .navbar-item{
+        margin-top: 7%;
+        margin-left: 8%;
+    }
+
+    .navbar-item:first-child{
+        margin-left: 20%;
+    }
+
+    .navbar-link:hover{
         color: black;
     }
-    /* slider button */
-    .slider .slider-img .slider-btn{
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
+
+    .navbar-link:hover:after{
+        color:black;
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        display: block; /* This will put the pseudo element on its own line. */
+        margin: 0 auto; /* This will center the border. */
+        width: 50%; /* Change this to whatever width you want. */
+        padding-top: 5px; /* This creates some space between the element and the border. */
+        border-bottom: 2px solid black; /* This creates the border. Replace black with whatever color you want. */
+    }
+}
+
+@media(max-width:770px){
+    .caroseul-button{
+        left: 80%;
+     }
+
+    .caroseul-button__right{
+        width: 10%;
+        padding-left: 3rem;
     }
 
-    /* slider content */
-    .slider .slider-content .title{font-size: 1.5rem;}
-}
-/* /-end  slider section */
+    .caroseul-button__left{
+        width: 10%;
+        padding-left: 3rem;
+    }
 
-/*=============================================================================================================================*/
+    .navbar-brand{
+        margin-left: 300px;
+    }
 
-/* start abut section */
-.about .left-img img{
-    width: 100%;
-    height: 100%;
+    .navbar-list{
+        left: -8%;
+        height: 120px;
+    }
+
+    .navbar-item{
+        margin-top: 10%;
+    }
+
+    .navbar-item:first-child{
+        margin-left: 20%;
+    }
+    
+    #mobile-nav-icon{
+        margin-top: 2%;
+    }
 }
-.about .right-img img{
-    width: 100%;
-    height: 100%;
+
+
+@media (max-width:540px){
+    .caroseul-button{
+        left: 73%;
+     }
+ 
+     .caroseul-button__left{
+         width: 13.4%;
+         padding: 2rem ;
+     }
+ 
+     .caroseul-button__right{
+         width: 13.4%;
+         padding: 2rem ;
+     }
+ 
+     .about-section__img{
+         width: 100%;
+     }
+ 
+     
+     #mobile-nav-icon{
+        margin-top: 6%;
+     }
+     .navbar-list{
+         height: 120px;
+     }
+ 
+     .navbar-brand{
+         margin-left: 210px;
+     }
+ 
+     .navbar-link{
+         color: black;  
+     }
+    
+     .navbar-item{
+        margin-top: 13%;
+    }
+     
+ 
+     .navbar-item:first-child{
+         margin-left: 20%;
+     }
 }
-.about .content .title{
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin: 10px;
+
+@media (max-width:400px){
+
+    .caroseul-button{
+        left: 73%;
+    }
+
+    .navbar-brand{
+        margin-left: 140px;
+    }
+
+    .navbar-item{
+        margin-top: 18%;
+        margin-left: 5%;
+    }
+
+    .navbar-item:first-child{
+        margin-left: 22%;
+    }
 }
-.about .content .desc{
-    line-height: 1.6;
-    color: #666;
-    margin: 10px;
-} 
-/* /-end about section */
