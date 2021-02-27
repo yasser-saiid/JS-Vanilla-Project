@@ -31,6 +31,9 @@ form.addEventListener('submit', (e)=>{
         e.preventDefault();
         document.getElementById('email-message').innerHTML = `<i class="fa fa-exclamation-triangle mr-1"></i> please inter a valid email ... lock at our terms !`
     }
+    email.addEventListener('focus', ()=>{
+        document.getElementById('email-message').innerHTML = ``
+    })
 })
 
 

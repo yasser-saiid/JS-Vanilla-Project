@@ -65,7 +65,7 @@ function showPerson (){
 
 // show prev person 
 prevBtn.addEventListener('click', ()=>{
-    currentItem--
+    currentItem--;
     if(currentItem < 0){
         currentItem = TistimonialsContent.length -1
     }
@@ -84,8 +84,6 @@ randomBtn.addEventListener('click', ()=>{
     currentItem = Math.floor(Math.random() * TistimonialsContent.length)
     showPerson(currentItem)
 })
-
-
 
 
 

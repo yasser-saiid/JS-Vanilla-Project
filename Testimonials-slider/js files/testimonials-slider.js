@@ -61,4 +61,3 @@ netxBtn.addEventListener('click', ()=>{
     }
     showPerson()
 })
-
